@@ -20,4 +20,14 @@ public class Categoria implements Serializable{
     @Column(name="ruta_imagen")
     private String rutaImagen;
     private boolean activo;
+    
+    public Categoria(){
+        
+    }
+
+    public Categoria(String descripcion, boolean activo) {
+        this.descripcion = descripcion;
+        this.activo = activo;
+    }
+      
 }
